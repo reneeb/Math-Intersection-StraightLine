@@ -1,9 +1,12 @@
 package Math::Intersection::StraightLine;
 
+# ABSTRACT: Calculate intersection point for two lines
+
 use 5.006001;
 use strict;
 use warnings;
-our $VERSION = '0.04';
+
+our $VERSION = '0.05';
 
 sub new{
   my ($class) = @_;
@@ -185,10 +188,6 @@ sub _check_point_on_vector{
 1;
 __END__
 
-=head1 NAME
-
-Math::Intersection::StraightLine - Calculate intersection point for two lines
-
 =head1 SYNOPSIS
 
   use Math::Intersection::StraightLine;
@@ -302,18 +301,5 @@ returns
 =head2 new
 
 returns a new object of C<Math::Intersection::StraightLine>
-
-=head1 AUTHOR
-
-Renee Baecker, E<lt>module@renee-baecker.deE<gt>
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2005 by Renee Baecker
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.6 or,
-at your option, any later version of Perl 5 you may have available.
-
 
 =cut
